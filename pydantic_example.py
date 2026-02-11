@@ -24,7 +24,7 @@ print(user.account_id)
 
 # user_json_str = user.model_dump_json()
 
-new_user_json_str = '{"name": "Mike", "email": "mike@gmail.com", "account_id": 234}'
+new_user_json_str = '{"name": "Mike", "email": "mike@gmail.com", "account_id": -234}'
 new_user = User.model_validate_json(new_user_json_str)
 
 print("\nNew user:")
